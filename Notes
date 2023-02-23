@@ -1,0 +1,7 @@
+Scrollview
+useColorScheme
+Flex
+Shadow
+Deep linking - When we click on icon from an app that will redirect to another app
+Linking - Linking gives you a general interface to interact with both incoming and outgoing app links.
+numberOfLines={3} -> It will take only 3 lines and  make extra lines to ... 
