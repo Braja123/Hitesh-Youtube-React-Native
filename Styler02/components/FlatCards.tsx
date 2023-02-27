@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
+    color: '#CAD5E2',
   },
   container: {
     flexDirection: 'row',

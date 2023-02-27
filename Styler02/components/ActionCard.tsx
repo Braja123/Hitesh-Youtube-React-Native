@@ -17,11 +17,11 @@ const ActionCard = () => {
       <Text style={styles.headiangText}>ActionCard</Text>
       <View style={[styles.card, styles.elevatedCard]}>
         <View style={styles.headingContainer}>
-          <Text style={styles.headerText}></Text>
+          <Text style={styles.headerText}>What's New in JS-21</Text>
         </View>
         <Image
           source={{
-            uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yRvrrx0AfWO66FPXMZHHVaoYyu-YcFkM6E773n0&s',
+            uri: 'https://images.pexels.com/photos/14446665/pexels-photo-14446665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           }}
           style={styles.cardImage}
         />
@@ -51,15 +51,58 @@ const ActionCard = () => {
 export default ActionCard;
 
 const styles = StyleSheet.create({
-  headiangText: {},
-  card: {},
-  elevatedCard: {},
-  headingContainer: {},
-  headerText: {},
+  headiangText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
+    color: '#CAD5E2',
+  },
+  card: {
+    width: 350,
+    height: 360,
+    borderRadius: 6,
+    marginVertical: 12,
+    marginHorizontal: 16,
+  },
+  elevatedCard: {
+    backgroundColor: '#EF5354',
+    elevation: 4,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: '#333',
+    shadowOpacity: 0.4,
+  },
+  headingContainer: {
+    height: 40,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerText: {
+    color: '#000',
+    fontSize: 16,
+    fontWeight: '600',
+  },
   cardImage: {
     height: 100,
   },
-  bodyContainer: {},
-  footerContainer: {},
-  socialLinks: {},
+  bodyContainer: {
+    padding: 10,
+  },
+  footerContainer: {
+    padding: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  socialLinks: {
+    fontSize: 16,
+    color: '#000',
+    backgroundColor: '#fff',
+    paddingHorizontal: 20,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
 });
